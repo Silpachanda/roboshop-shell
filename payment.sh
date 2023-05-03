@@ -13,9 +13,11 @@ echo -e "\e[36m>>>>unzip payment<<<<\e]0m"
 unzip /tmp/payment.zip
 cd /app
 pip3.6 install -r requirements.txt
+
 echo -e "\e[36m>>>>copy the contents to payment service<<<<\e]0m"
 cp /home/centos/roboshop-shell/payment.service /etc/systemd/system/payment.service
 
+echo -e "\e[36m>>>>restart the payment service<<<<\e]0m"
 systemctl daemon-reload
 systemctl enable payment
 systemctl restart payment
