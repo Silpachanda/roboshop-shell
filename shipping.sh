@@ -10,7 +10,7 @@ mv target/shipping-1.0.jar shipping.jar
 
 systemctl daemon-reload
 systemctl enable shipping
-systemctl start shipping
+systemctl restart shipping
 
 yum install mysql -y
 mysql -h  mysql.shilpadevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
