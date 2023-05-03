@@ -13,5 +13,5 @@ systemctl enable shipping
 systemctl start shipping
 
 yum install mysql -y
-mysql -h <MYSQL-SERVER-IPADDRESS> -uroot -pRoboShop@1 < /app/schema/shipping.sql
+mysql -h  mysql.shilpadevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
 systemctl restart shipping
