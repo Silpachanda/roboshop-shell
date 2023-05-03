@@ -1,5 +1,6 @@
 echo -e "\e[36m>>>>Install python<<<<\e]0m"
 yum install python36 gcc python3-devel -y
+
 echo -e "\e[36m>>>>add user<<<<\e]0m"
 useradd roboshop
 
