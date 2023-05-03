@@ -5,8 +5,10 @@ useradd roboshop
 
 rm -rf /app
 mkdir /app
+
 curl -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip
 cd /app
+
 unzip /tmp/user.zip
 cd /app
 npm install
