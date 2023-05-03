@@ -1,3 +1,4 @@
+
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
 useradd roboshop
@@ -7,11 +8,11 @@ cd /app
 unzip /tmp/user.zip
 cd /app
 npm install
-cp user.service /etc/systemd/system/user.service
+cp home/centos/roboshop-shell/user.service /etc/systemd/system/user.service
 systemctl daemon-reload
 systemctl enable user
 systemctl start user
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp home/centos/roboshop-shell/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host mongodb.gowthamidevops.online </app/schema/user.js
+mongo --host mongo.shilpadevops.online </app/schema/user.js
